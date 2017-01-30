@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+${1:functionName} : function(component, event, helper) {
+
+},
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>function</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js meta.group.braces.round.js meta.group.braces.curly.js</scope>
+	<description>standard function boilerplate</description>
+</snippet>

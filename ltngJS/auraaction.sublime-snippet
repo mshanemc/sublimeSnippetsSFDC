@@ -8,7 +8,7 @@ action.setCallback(this, function(a){
 	var state = a.getState();
 	if (state === "SUCCESS") {
 		${5:console.log(a);}
-	}  else if (state === "ERROR") {                    
+	}  else if (state === "ERROR") {
 		var appEvent = \$A.get("e.c:handleCallbackError");
 		appEvent.setParams({
 			"errors" : a.getError()
@@ -21,5 +21,5 @@ action.setCallback(this, function(a){
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>action</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.javascript</scope> -->
+	<scope>source.js meta.group.braces.round.js meta.group.braces.curly.js meta.group.braces.curly.js</scope>
 </snippet>

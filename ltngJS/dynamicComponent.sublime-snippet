@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-\$A.createComponent(          
+\$A.createComponent(
   "${1:componentType}", //component type
   {	//properties array
     "aura:id" : "${2:somethingUnique}"
-  }, 
+  },
   function(newComp, status, errorMessage){
     if (status === "SUCCESS") {
       var body = cmp.get("v.${3:target}");
@@ -21,5 +21,5 @@
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>$A.create</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.javascript</scope>
+  <scope>source.js meta.group.braces.round.js meta.group.braces.curly.js meta.group.braces.curly.js</scope>
  --></snippet>
