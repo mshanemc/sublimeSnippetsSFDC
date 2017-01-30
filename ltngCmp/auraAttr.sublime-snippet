@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+aura:attribute name="${1}" type="${2}" required="${3:true}"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aura:attribute</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Aura attribute</description>
+	<scope>text.ltng.basic</scope>
+
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+aura:registerEvent name="${1:localName}" type="c:${2:eventType}"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aura:registerEvent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>aura event registration</description>
+	<scope>text.ltng.basic</scope>
+
+</snippet>

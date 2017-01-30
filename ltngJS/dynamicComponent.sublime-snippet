@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+\$A.createComponent(          
+  "${1:componentType}", //component type
+  {	//properties array
+    "aura:id" : "${2:somethingUnique}"
+  }, 
+  function(newComp, status, errorMessage){
+    if (status === "SUCCESS") {
+      var body = cmp.get("v.${3:target}");
+      body.push(newComp);
+      cmp.set("v.${3:target}", body);
+    } else if (status === "INCOMPLETE"){
+      console.log("No response from server or client is offline.")
+    } else if (status === "INCOMPLETE"){
+      console.log("Error: " + errorMessage);
+    }
+  }
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>$A.create</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.javascript</scope>
+ --></snippet>

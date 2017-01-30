@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ltng:require scripts="${1:scripts}" styles="${2:stypes}" afterScriptsLoaded="{!c.${3:doInit}}"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ltng:req</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.ltng.basic</scope>
+
+</snippet>

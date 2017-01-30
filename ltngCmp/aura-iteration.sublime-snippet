@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+aura:iteration items="{!v.${1:attribute}}" var="${2:localVar}">
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aura:iteration</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>aura:iteration with items and var</description>
+	<scope>text.ltng.basic, text.ltng.basic meta.tag.other.html</scope>
+</snippet>

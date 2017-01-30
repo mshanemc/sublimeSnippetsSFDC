@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<aura:handler name="init" value="{!this}" action="{!c.${2:functionToCall}}"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>init</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Aura init handler code</description>
+	<scope>text.ltng.basic</scope>
+
+
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+var action = component.get("c.${1:apexMethod}");
+action.setParams({
+	"${3:key}" : "${4:value}"
+});
+action.setCallback(this, function(a){
+	var state = a.getState();
+	if (state === "SUCCESS") {
+		${5:console.log(a);}
+	}  else if (state === "ERROR") {                    
+		var appEvent = \$A.get("e.c:handleCallbackError");
+		appEvent.setParams({
+			"errors" : a.getError()
+		});
+		appEvent.fire();
+	}
+});
+\$A.enqueueAction(action);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>action</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.javascript</scope> -->
+</snippet>
