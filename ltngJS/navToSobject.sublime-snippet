@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+let navEvt = \$A.get("e.force:navigateToSObject");
+navEvt.setParams({
+  "recordId": "${1:recordId}",
+  "slideDevName": "${2:detail|chatter|related}"
+});
+navEvt.fire();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>nav</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js meta.group.braces.round.js meta.group.braces.curly.js meta.group.braces.curly.js</scope>
+</snippet>

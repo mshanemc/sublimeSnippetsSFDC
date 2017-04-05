@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+public static list<user> createUsers(integer numberOfUsers){
+		list<user> users = new list<user>();
+
+		Profile p = [SELECT Id FROM Profile WHERE Name='Standard User'];
+
+
+		for (integer i=0; i<numberOfUsers; i++){
+			string x = string.valueOf(i);
+			User u = new User(Alias = 't'+x, Email='standarduser'+x+'@${1:testLightningSharing2017.msm}',
+				EmailEncodingKey='UTF-8', LastName='Testing' + x, LanguageLocaleKey='en_US',
+				LocaleSidKey='en_US', ProfileId = p.Id,
+				TimeZoneSidKey='America/Los_Angeles', UserName='standarduser'+x+'@${1:testLightningSharing2017.msm}');
+			users.add(u);
+		}
+
+		insert users;
+		return users;
+	}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>createUsers</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<scope>source.apex</scope>
+
+</snippet>

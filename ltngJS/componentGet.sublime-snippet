@@ -1,10 +1,9 @@
 <snippet>
 	<content><![CDATA[
-ltng:require scripts="{!\$Resource.${1:lodash}}" styles="${2:styles}" afterScriptsLoaded="{!c.${3:doInit}}"/>
+component.get("${1:c|v}.$2")
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ltng:req</tabTrigger>
+	<tabTrigger>component.get()</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>text.ltng.basic</scope>
-
+	<scope>source.js meta.group.braces.round.js meta.group.braces.curly.js meta.group.braces.curly.js</scope>
 </snippet>

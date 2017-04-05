@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+lightning:card title="$1" iconName="${2:family}:${3:icon}" variant="${4:base|narrow}">
+	<aura:set attribute="actions">
+		<!--actions go here, mostly buttons!-->
+	</aura:set>
+	<aura:set attribute="footer">
+		<!--footer markup-->
+	</aura:set>
+
+	<!--then put your body here, outside any aura:set-->
+
+</lightning:card>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lightning:card</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.ltng.basic</scope>
+</snippet>
