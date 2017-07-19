@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+component.find("${1:this}").saveRecord(
+	\$A.getCallback(function(saveResult){
+		//console.log(saveResult);
+		if (saveResult.state === "SUCCESS"){
+			//happy logic here
+			component.find("$1").reloadRecord();
+		} else if (saveResult.state === "INCOMPLETE") {
+			console.log("User is offline, device doesn't support drafts.");
+		} else if (saveResult.state === "ERROR"){
+			component.find("leh").passErrors(saveResult.error);
+		}
+	})
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>frdsave</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js meta.group.braces.round.js meta.group.braces.curly.js meta.group.braces.curly.js</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+force:recordData aura:id="${1:frd}" mode="${2:VIEW|EDIT}" recordId="{!v.${3:recordId}}" targetFields="{!v.${4:targetFields}}" layoutType="${5:FULL|COMPACT}" >
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>force:recordData</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.ltng.basic</scope>
+</snippet>

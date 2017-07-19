@@ -1,11 +1,10 @@
 <snippet>
 	<content><![CDATA[
-flexipage:availableForAllPageTypes
+flexipage:availableForRecordHome
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>flexi</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>text.ltng.basic meta.tag.other.html string.quoted.double.html punctuation.definition.string.end.html</scope> -->
-	<description>flexipage:availableForAllPageTypes</description>
-
+	<description>flexipage:availableForRecordHome</description>
 </snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<c:LightningErrorHandler aura:id="leh"/>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>leh</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.ltng.basic</scope>
+</snippet>
