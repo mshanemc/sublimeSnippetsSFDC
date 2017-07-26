@@ -1,6 +1,8 @@
 <snippet>
 	<content><![CDATA[
 aura:iteration items="{!v.${1:attribute}}" var="${2:localVar}">
+
+</aura:iteration>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>aura:iteration</tabTrigger>

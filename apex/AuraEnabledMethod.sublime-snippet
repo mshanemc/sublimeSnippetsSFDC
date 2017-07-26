@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+@AuraEnabled
+${1:public} static ${2:string} ${3:methodName}(){
+
+	return null;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>AuraEnabled</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.apex</scope>
+	<description>AuraEnabled Method</description>
+</snippet>
