@@ -4,7 +4,7 @@ let ${1:action} = component.get("c.${2}");
 let prom = helper.executeActionJSON(component, ${1})
 	.then(\$A.getCallback(function (result){
 		console.log(result);
-	}));
+	}),\$A.getCallback(function (){}));
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>promAct</tabTrigger>
